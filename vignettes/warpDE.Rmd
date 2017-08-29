@@ -21,11 +21,11 @@ theme_update(plot.title = element_text(hjust = 0.5))
 set.seed(48132) # for reproductivity
 ```
 
-# 1 - Introduction
+# Introduction
 
-This vignette describes the workflow of the R package `warpDE`, showing three different methods to infer differentially expressed genes from reconstructed cell lineages. After a first step of cell ordering reconstruction performed with `Slingshot` (see [@Street2017]), we try to find genes with significantly different behaviours between two cell lineages.
+This vignette describes the workflow of the R package `warpDE`, showing three different methods to infer differentially expressed (DE) genes from reconstructed cell lineages. After a first step of lineage inference and cell pseudotime ordering performed with `Slingshot` (see [@Street2017]) @Street2017, we try to find genes with significantly different behaviors between two cell lineages.
 
-This vignette uses the data from [@Fletcher2017] of Olfactory Epithelium cells from mouses. We restricted the data to only two cell lineages for simplicity purpose.
+This vignette uses the data from [@Fletcher2017], which examines the differentiation of stem cells from the mouse olfactory epithelium. For the sake of simplicity, we restricted the data to only two lineages: the lineages corresponding to the differentiation of horizontal basel cells (HBC) into neuronal and sustentacular cells, respectively.
 <!-- ![Cell lineages in the study](images/fig:lignees_study.png) -->
 
 <img src="images/fig:lignees_study.png" alt="alt text" width=100% height=30%>
